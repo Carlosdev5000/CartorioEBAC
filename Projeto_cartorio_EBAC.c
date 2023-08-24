@@ -133,6 +133,7 @@ int main()  // Fim da definição das funções.
 		printf("\t1 - Registrar nomes.\n");
 		printf("\t2 - consultar nomes.\n");
 		printf("\t3 - Deletar nomes.\n\n");
+		printf("\t4 - Sair do menu?\n");
 		printf("Opção:"); // fim do menu
 	
 		scanf("%d", &opcao); // armasenando a escolha do usuario
@@ -154,10 +155,11 @@ int main()  // Fim da definição das funções.
 			case 3:
 			deletar();
 			break;
-		
+			
 			case 4:
-			erro();
-			break;
+				printf("Obrigado por ussar o cartorio EBAC.");
+			return 0;
+		
 			
 			default:
 			erro2(); // fim das opções
